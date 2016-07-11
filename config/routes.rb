@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :images
   devise_for :users, :controllers => { :registrations => 'registrations'} #for registration look for my controller and registrations first then go to devise registrations
   root 'welcome#index'
 
